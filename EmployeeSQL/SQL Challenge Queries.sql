@@ -11,9 +11,15 @@ FROM employees e
 JOIN salaries s ON e.emp_no = s.emp_no;
 
 --2) List the first name, last name, and hire date for the employees who were hired in 1986.
+--Solution 1
 SELECT first_name, last_name, hire_date
 FROM employees
 WHERE DATE_PART('year', hire_date) = 1986;
+
+--Solution 2
+SELECT first_name, last_name, hire_date
+FROM employees
+WHERE EXTRACT(YEAR FROM hire_date) = 1986
 
 --3) List the manager of each department along with their department number, department name, employee number, last name, and first name.
 
