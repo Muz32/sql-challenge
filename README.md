@@ -41,5 +41,6 @@ The `SQL Queries.sql` file in the `EmployeeSQL` folder contains several queries 
     - `dept_emp.csv`
     - `dept_manager.csv`
     - `employees.csv`
+    - `employees (dates formatted).csv`
     - `salaries.csv`
     - `titles.csv`
