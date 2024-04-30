@@ -7,7 +7,7 @@ This assignment challenge involves creating a SQL database to manage employee re
 
 ## Step 1: Data Modelling
 
-I sketched the physical Entity Relationship Diagram (ERD) for the database using https://www.quickdatabasediagrams.com/. This tool assisted in creating and visualising the database schemas, including data types, primary and foreign key constraints, and relationships between table fields. The ERD image is located at `EmployeeSQL/ERD sketch.png`.
+I sketched the physical Entity Relationship Diagram (ERD) for the database using Quick Database Diagrams (https://www.quickdatabasediagrams.com/). This tool assisted in creating and visualising the database schemas, including data types, primary and foreign key constraints, and relationships between table fields. The ERD image is located at `EmployeeSQL/ERD sketch.png`.
 
 ## Step 2: Data Engineering
 
