@@ -24,7 +24,7 @@ The CSV data is located in the `EmployeeSQL/data` subfolder.
 
 ## Important Notes
 
-- **Date Format**: PostgreSQL requires date data in the format `YYYY/MM/DD`. If facing issues with date imports from `employees.csv`, use `employees (dates formatted).csv`.
+- **Date Format**: Depending on settings, PostgreSQL may require date data in this format `YYYY/MM/DD`. If facing issues with date imports from `employees.csv`, use `employees (dates formatted).csv`.
 - **Import Order**: To avoid foreign key constraint errors, import data in the order tables were created.
 
 ## SQL Queries
