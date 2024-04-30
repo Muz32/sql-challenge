@@ -1,5 +1,5 @@
 
--- Table Schema
+-- Table Schemas
 
 CREATE TABLE Titles (
     Title_ID VARCHAR(5)   NOT NULL,
@@ -10,15 +10,14 @@ CREATE TABLE Titles (
 CREATE TABLE Employees (
     Emp_No INTEGER NOT NULL,
     Title_ID VARCHAR(5) NOT NULL,
-    Birth_Date DATE NULL, 
+    Birth_Date DATE NOT NULL, 
     First_Name VARCHAR(100) NOT NULL,
     Last_Name VARCHAR(100) NOT NULL,
     Sex VARCHAR(1) NOT NULL,
-    Hire_Date DATE NULL, 
+    Hire_Date DATE NOT NULL, 
     PRIMARY KEY (Emp_No),
     FOREIGN KEY (Title_ID) REFERENCES Titles (Title_ID)
 );
-
 
 CREATE TABLE Salaries (
     Emp_No INTEGER   NOT NULL,
@@ -33,8 +32,6 @@ CREATE TABLE Departments (
     PRIMARY KEY (Dept_No)
 );
 
-
-
 CREATE TABLE Department_Employees_Junction (
     Emp_No INTEGER   NOT NULL,
     Dept_No VARCHAR(5)   NOT NULL,
@@ -43,7 +40,6 @@ CREATE TABLE Department_Employees_Junction (
 	FOREIGN KEY(Dept_No)REFERENCES Departments (Dept_No)
 );
 
-
 CREATE TABLE Department_Manager_Junction (
     Dept_No VARCHAR(5)   NOT NULL,
     Emp_No INTEGER   NOT NULL,
@@ -51,13 +47,6 @@ CREATE TABLE Department_Manager_Junction (
 	FOREIGN KEY(Dept_No)REFERENCES Departments (Dept_No),
 	FOREIGN KEY(Emp_No)REFERENCES Employees (Emp_No)
 );
-
-DROP TABLE IF EXISTS Titles
-DROP TABLE IF EXISTS Employees 
-DROP TABLE IF EXISTS Salaries
-DROP TABLE IF EXISTS Departments
-DROP TABLE IF EXISTS Department_Employees_Junction
-DROP TABLE IF EXISTS Department_Manager_Junction
 
 Select * from Titles
 Select * from Employees 
