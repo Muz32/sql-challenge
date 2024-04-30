@@ -1,5 +1,4 @@
 # sql-challenge
-# Project Title
 
 ## Project Overview
 
