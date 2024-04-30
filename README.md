@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This assignment challenge involves creating a SQL database to manage employee records. The database creation process was divided into two main steps:
+This assignment challenge involves creating a SQL database to manage employee records. The database creation process was completed in two main steps:
 
 ## Step 1: Data Modelling
 
